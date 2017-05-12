@@ -1,5 +1,5 @@
 def createuser():
-	user = {name:b_no}
+	user = {}
 
 	name = raw_input("Please enter your name: ")
 	print "you entered", name
@@ -7,20 +7,20 @@ def createuser():
 	b_no = raw_input("Please enter your bootcamp id: ")
 	print "you entered", b_no
 
-	user.update({name:b_no})
+	user.update({b_no:name})
 
 	return user
 
 def createcalender():
 
-	calender = {b_no:c_name}
+	calender = {}
 
 	b_no = raw_input("Please enter your bootcamp id: ")
 
 	c_name = raw_input("Please enter the calender name: ")
 	print "Calender name", c_name
 
-	calender.update({})
+	calender.update({b_no:c_name})
 
 	return calender
 
